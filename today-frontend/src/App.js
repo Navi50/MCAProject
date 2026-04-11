@@ -3,6 +3,8 @@ import Home from './pages/Home';
 import Detail from './pages/Detail';
 import Onboarding from './pages/Onboarding';
 import Settings from './pages/Settings';
+import Compare from './pages/Compare';
+
 
 function App() {  
   return (
@@ -11,8 +13,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Onboarding />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/detail/:countryCode" element={<Detail />} />
+          <Route path="/detail/:code" element={<Detail />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/compare" element={<Compare />} />
         </Routes>
       </div>
     </Router>

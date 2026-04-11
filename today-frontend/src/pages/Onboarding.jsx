@@ -12,7 +12,7 @@ function Onboarding() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all?fields=name,flags,cca2,timezones')
+    fetch('https://restcountries.com/v3.1/all?fields=name,flags,cca2,timezones,latlng')
       .then(res => res.json())
       .then(data => {
         const sorted = data.sort((a, b) =>
